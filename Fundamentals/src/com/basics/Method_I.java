@@ -1,9 +1,13 @@
 package com.basics;
 
-
+// void getEmployeeInfo(int);
 class EmployeeInfo{
-	public void getEmployeeInfo() {
-		System.out.println("No details available");
+	public void getEmployeeInfo(int num) {
+		if(num>3) {
+			System.out.println("No info");
+			return;
+		}
+		System.out.println("Hello");
 	}
 	
 	public static void getCompanyName() {
@@ -12,6 +16,10 @@ class EmployeeInfo{
 	
 	public String getEmployeeName() {
 		return "Varun";
+		
+	}
+	public static int getEmployeeCount() {
+		return 0;
 	}
 	
 	
@@ -19,7 +27,7 @@ class EmployeeInfo{
 public class Method_I {
 	public static void main(String[] args) {
 		EmployeeInfo emp = new EmployeeInfo();
-		emp.getEmployeeInfo();
+		emp.getEmployeeInfo(23);
 		
 		EmployeeInfo.getCompanyName();
 		
